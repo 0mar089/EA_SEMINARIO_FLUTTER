@@ -159,7 +159,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   _isLoadingOrgs
                       ? const CircularProgressIndicator()
                       : DropdownButtonFormField<String>(
-                          value: _selectedOrganizationId,
+                          initialValue: _selectedOrganizationId,
                           decoration: const InputDecoration(
                             labelText: 'Organización',
                             border: OutlineInputBorder(),

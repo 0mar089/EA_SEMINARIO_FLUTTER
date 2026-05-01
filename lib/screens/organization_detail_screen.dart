@@ -185,7 +185,7 @@ class _OrganizationDetailScreenState extends State<OrganizationDetailScreen> {
               ),
               Chip(
                 label: Text('${pendingTasks.length} pendientes'),
-                backgroundColor: Colors.blueAccent.withOpacity(0.1),
+                backgroundColor: Colors.blueAccent.withValues(alpha: 0.1),
                 labelStyle: const TextStyle(
                   color: Colors.blueAccent,
                   fontWeight: FontWeight.bold,
@@ -201,7 +201,7 @@ class _OrganizationDetailScreenState extends State<OrganizationDetailScreen> {
             return Container(
               height: 120, // Altura de las cartas horizontales
               color: candidateData.isNotEmpty
-                  ? Colors.blue.withOpacity(0.1)
+                  ? Colors.blue.withValues(alpha: 0.1)
                   : Colors.transparent,
               child: pendingTasks.isEmpty
                   ? const Center(
@@ -353,7 +353,6 @@ class _OrganizationDetailScreenState extends State<OrganizationDetailScreen> {
         elevation: 8.0,
         child: Opacity(
           opacity: 0.9,
-          // Constreñir el tamaño durante el arrastre evita el error de la fila expandida en Overlay
           child: SizedBox(
             width: isHorizontal ? 240 : 200,
             child: cardWidget,
@@ -441,7 +440,7 @@ class _OrganizationDetailScreenState extends State<OrganizationDetailScreen> {
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-              color: Colors.blueAccent.withOpacity(0.3),
+              color: Colors.blueAccent.withValues(alpha: 0.3),
               blurRadius: 10,
               offset: const Offset(0, 5),
             ),

@@ -152,7 +152,7 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
         usuarios: _selectedUsuarioIds.toList(),
       );
 
-      print('Formulario válido. Datos listos para la Fase 4');
+      // Formulario válido. Datos listos para la Fase 4
 
       if (!mounted) {
         return;
